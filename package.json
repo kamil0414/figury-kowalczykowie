@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "web-dev-server --node-resolve --open --watch --app-index index.dev.html",
+    "start:watch": "web-dev-server --node-resolve --open --watch --app-index index.dev.html",
     "build": "tsc"
   },
   "repository": {
