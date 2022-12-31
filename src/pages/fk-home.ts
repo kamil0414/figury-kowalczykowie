@@ -1,5 +1,6 @@
 import { LitElement, css, html } from "lit";
 import { customElement } from "lit/decorators.js";
+import "../components/fk-carousel";
 
 @customElement("fk-home")
 export class FkHome extends LitElement {
@@ -19,6 +20,15 @@ export class FkHome extends LitElement {
       flex: 1;
     }
 
+    .flex {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .flex > * {
+      flex: 1;
+    }
+
     h1 {
       margin-bottom: 40px;
       font-size: 100px;
@@ -27,7 +37,7 @@ export class FkHome extends LitElement {
     }
 
     h4 {
-      font-weight: 300;
+      font-weight: 400;
     }
 
     .container {
@@ -45,19 +55,22 @@ export class FkHome extends LitElement {
     return html`<main>
       <div class="container">
         <div class="flex">
-          <h1>Witaj!</h1>
-          <h2>
-            Nasza firma zajmuje się produkcją wyrobów gipsowych. Specjalizujemy
-            się w produkcji figur dewocjonalnych, których w swojej ofercie mamy
-            duży asortyment.
-          </h2>
-          <h4>
-            Nasze wyroby zaliczamy do "rękodzieła" gdyż cała produkcja odbywa
-            się wyłącznie z materiałów przyjaznych środowisku (z gipsu
-            naturalnego) i jest pracą ludzkich rąk, począwszy od zrobienia form,
-            poprzez odlew, malowanie aż do momentu wystawienia figury na
-            sprzedaż.
-          </h4>
+          <div>
+            <h1>Witaj!</h1>
+            <h2>
+              Nasza firma zajmuje się produkcją wyrobów gipsowych.
+              Specjalizujemy się w produkcji figur dewocjonalnych, których w
+              swojej ofercie mamy duży asortyment.
+            </h2>
+            <h4>
+              Nasze wyroby zaliczamy do "rękodzieła" gdyż cała produkcja odbywa
+              się wyłącznie z materiałów przyjaznych środowisku (z gipsu
+              naturalnego) i jest pracą ludzkich rąk, począwszy od zrobienia
+              form, poprzez odlew, malowanie aż do momentu wystawienia figury na
+              sprzedaż.
+            </h4>
+          </div>
+          <fk-carousel></fk-carousel>
         </div>
       </div>
     </main>`;

@@ -35,7 +35,7 @@ export class FkHeader extends LitElement {
     }
 
     a {
-      color: unset;
+      color: #3d449a;
       text-decoration: none;
     }
 
