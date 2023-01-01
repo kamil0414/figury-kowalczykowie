@@ -145,7 +145,7 @@ export class FkCarousel extends LitElement {
           checked="checked"
         />
         <div class="carousel-item">
-          <img loading="lazy" src="src/assets/1.png" />
+          <img loading="lazy" alt="figury świętych" src="src/assets/1.webp" />
         </div>
         <input
           class="carousel-open"
@@ -156,7 +156,7 @@ export class FkCarousel extends LitElement {
           hidden=""
         />
         <div class="carousel-item">
-          <img loading="lazy" src="src/assets/2.png" />
+          <img loading="lazy" alt="figury świętych" src="src/assets/2.webp" />
         </div>
         <input
           class="carousel-open"
@@ -167,7 +167,7 @@ export class FkCarousel extends LitElement {
           hidden=""
         />
         <div class="carousel-item">
-          <img loading="lazy" src="src/assets/3.png" />
+          <img loading="lazy" alt="figury świętych" src="src/assets/3.webp" />
         </div>
         <label for="carousel-3" class="carousel-control prev control-1"
           >‹</label
