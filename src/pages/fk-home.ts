@@ -33,11 +33,7 @@ export class FkHome extends LitElement {
       margin-bottom: 40px;
       font-size: 100px;
       line-height: 100px;
-      font-weight: 300;
-    }
-
-    h4 {
-      font-weight: 400;
+      font-weight: 100;
     }
 
     .container {
@@ -62,13 +58,13 @@ export class FkHome extends LitElement {
               Specjalizujemy się w produkcji figur dewocjonalnych, których w
               swojej ofercie mamy duży asortyment.
             </h2>
-            <h4>
+            <p>
               Nasze wyroby zaliczamy do "rękodzieła" gdyż cała produkcja odbywa
               się wyłącznie z materiałów przyjaznych środowisku (z gipsu
               naturalnego) i jest pracą ludzkich rąk, począwszy od zrobienia
               form, poprzez odlew, malowanie aż do momentu wystawienia figury na
               sprzedaż.
-            </h4>
+            </p>
           </div>
           <fk-carousel></fk-carousel>
         </div>
