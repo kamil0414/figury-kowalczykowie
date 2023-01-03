@@ -51,7 +51,7 @@ export class FkHeader extends LitElement {
         <div class="container">
         <div id="links">
         <a href="tel:343281343">/34/ 328 13 43</a>
-        <a class="mail" href=mailto:colins.duet@op.pl">colins.duet@op.pl</a>
+        <a class="mail" href="mailto:colins.duet@op.pl">colins.duet@op.pl</a>
         </div>
         </div>
       </header>
