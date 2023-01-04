@@ -20,15 +20,6 @@ export class FkHome extends LitElement {
       flex: 1;
     }
 
-    .flex {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .flex > * {
-      flex: 1;
-    }
-
     h1 {
       margin-bottom: 40px;
       font-size: 100px;
@@ -45,13 +36,39 @@ export class FkHome extends LitElement {
         width: 1170px;
       }
     }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .jc-center {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .sm-12 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: 720px) {
+      .md-3 {
+        width: 25%;
+      }
+
+      .md-6 {
+        width: 50%;
+      }
+    }
   `;
 
   render() {
     return html`<main>
       <div class="container">
-        <div class="flex">
-          <div>
+        <div class="row">
+          <div class="md-6">
             <h1>Witaj!</h1>
             <h2>
               Nasza firma zajmuje się produkcją wyrobów gipsowych.
@@ -66,7 +83,29 @@ export class FkHome extends LitElement {
               sprzedaż.
             </p>
           </div>
-          <fk-carousel></fk-carousel>
+
+          <fk-carousel class="md-6"></fk-carousel>
+        </div>
+        <div class="row jc-center">
+          <div class="sm-12 md-3">
+            <h3>Najwyższa jakość</h3>
+            <p>Nasze długoletnie doświadczenie gwarantuje najwyższą jakość.</p>
+          </div>
+
+          <div class="sm-12 md-3">
+            <h3>Szybka realizacja</h3>
+            <p>Zapewniamy najkrótsze okresy realizacji.</p>
+          </div>
+
+          <div class="sm-12 md-3">
+            <h3>Specjalne zamówienia</h3>
+            <p>Nasze produkty dostosowujemy do wymagań klientów.</p>
+          </div>
+
+          <div class="sm-12 md-3">
+            <h3>Renowacje, naprawy</h3>
+            <p>Dokonujemy renowacji i napraw uszkodzonych figur.</p>
+          </div>
         </div>
       </div>
     </main>`;
